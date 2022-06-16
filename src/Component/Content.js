@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useState } from 'react'
 import { Routes, Route, Outlet, Link } from "react-router-dom";
+import Switch from '@mui/material/Switch';
 import Fade from 'react-reveal/Fade'
 function Content(bool , props){
 
@@ -18,7 +19,7 @@ function Content(bool , props){
 
                         <Card >
 
-                                <img src="/1622913462556.jpg"alt="not found" onMouseOut={()=>setImg(false)} onMouseOver={()=>setImg(true)} />
+                                <img src="protofolio/1622913462556.jpg"alt="not found" onMouseOut={()=>setImg(false)} onMouseOver={()=>setImg(true)} />
 
                                
                                  

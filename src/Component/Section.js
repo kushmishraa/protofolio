@@ -2,6 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Fade} from 'react-reveal'
+import Switch from '@mui/material/Switch';
 function Section(props) {
 
     console.log("boolean show in section = " + props.show)
