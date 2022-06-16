@@ -21,7 +21,7 @@ function Skills( bool) {
             experience={"1 years "}
             projects = {"No projects till now based on java programming"}
             description = {"Started learning java as an another language that taken my intrests , I basically used java for solving online coding questions on hackerrank and others"}
-            image2={"java.gif"}
+            image2={"/protofolio/publi/java.gif"}
             show={bool.show}
 
             />
