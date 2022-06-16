@@ -1,6 +1,9 @@
 {
   "name": "protofolio",
   "version": "0.1.0",
+  "engines": {
+    "node": "17.9.0"
+  },
   "private": true,
   "homepage": "http://kushmishraa.github.io/protofolio",
   "dependencies": {

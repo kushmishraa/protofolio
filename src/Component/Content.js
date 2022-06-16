@@ -19,7 +19,7 @@ function Content(bool , props){
 
                         <Card >
 
-                                <img src="protofolio/1622913462556.jpg"alt="not found" onMouseOut={()=>setImg(false)} onMouseOver={()=>setImg(true)} />
+                                <img src="/protofolio/1622913462556.jpg"alt="not found" onMouseOut={()=>setImg(false)} onMouseOver={()=>setImg(true)} />
 
                                
                                  
