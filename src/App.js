@@ -3,8 +3,6 @@ import Header from './Component/Header';
 import {  Routes , Route } from 'react-router-dom';
 import Content from './Component/Content';
 import Skills from './Component/Skills';
-import { Container } from '@mui/material';
-import {Switch} from '@mui/material';
 import styled from 'styled-components';
 import { useState } from 'react';
 
@@ -76,3 +74,4 @@ color:${prop=>prop.show? 'white' : 'black'};
 background-color : ${prop=>prop.show ? 'black' : 'white'};
 `
 
+const Switch=styled.div``
