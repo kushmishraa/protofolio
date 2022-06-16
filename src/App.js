@@ -35,8 +35,8 @@ function App() {
           </Nightmode>
 
     <Routes >
-    <Route path='protofolio/' exact element={<Content show={checked} />} />
-    <Route path='protofolio/Skills' exact element={<Skills show={checked} />} />
+    <Route path='/protofolio/' exact element={<Content show={checked} />} />
+    <Route path='/protofolio/Skills' exact element={<Skills show={checked} />} />
     </Routes>
   </Main>
   </>

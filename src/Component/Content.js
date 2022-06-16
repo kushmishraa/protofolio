@@ -50,13 +50,13 @@ function Content(bool , props){
             <Main>      
             <Buttons>
               <Fade left>
-            <Link to="/Skills"><button className="button-85" role="button">Skills</button></Link>
+            <Link to="/protofolio/Skills"><button className="button-85" role="button">Skills</button></Link>
             </Fade>
             <Fade top>
-            <Link to="/Skills"><button className="button-85" role="button">Projects</button></Link>
+            <Link to="/protofolio/Skills"><button className="button-85" role="button">Projects</button></Link>
             </Fade>
             <Fade right>
-            <Link to="/Skills"><button className="button-85" role="button">Cerification</button></Link>
+            <Link to="/protofolio/Skills"><button className="button-85" role="button">Cerification</button></Link>
             </Fade>
            </Buttons>
             </Main>
