@@ -5,6 +5,7 @@ import Content from './Component/Content';
 import Skills from './Component/Skills';
 import styled from 'styled-components';
 import { useState } from 'react';
+import Switch from '@mui/material/Switch';
 
 function App() {
 
@@ -34,8 +35,8 @@ function App() {
           </Nightmode>
 
     <Routes >
-    <Route path='/' exact element={<Content show={checked} />} />
-    <Route path='/Skills' exact element={<Skills show={checked} />} />
+    <Route path='protofolio/' exact element={<Content show={checked} />} />
+    <Route path='protofolio/Skills' exact element={<Skills show={checked} />} />
     </Routes>
   </Main>
   </>
@@ -74,4 +75,3 @@ color:${prop=>prop.show? 'white' : 'black'};
 background-color : ${prop=>prop.show ? 'black' : 'white'};
 `
 
-const Switch=styled.div``
