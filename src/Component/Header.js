@@ -24,7 +24,7 @@ function Header(bool) {
     </Msg>
   
     <Sign show1={bool.show}>
-    <Link to="/">
+    <Link to="/protofolio">
       Kushagra mishra
       </Link>
     </Sign>
@@ -72,15 +72,17 @@ const Container=styled.div`
 top: 0;
 right: 0;
 left: 0;
-@media(max-width:600px){
-
-  color : red;
+@media only screen and (max-width: 430px){
+height:50px;
+font-size: xxx-large;
 
 }
 `
 const Msg=styled.div`
-@media(max-width:600px){
+@media only screen and (max-width: 400px){
   
+  color : red;
+  display:none;
   
 }`
 
@@ -154,6 +156,12 @@ const Sign = styled.div
 
     color : ${prop=>prop.show1? 'white' : ' black '};
     text-decoration : none;
+
+  }
+
+  @media only screen and (max-width: 430px){
+  
+    margin-Left : auto;
 
   }
 

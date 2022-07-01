@@ -41,7 +41,7 @@ function Skills( bool) {
                 skillname={"Data structres and algorithms"}
                 experience={"1 years "}
                 projects = {"Created ticket counter system for college project "}
-                description = {"As per current development trends all the companies requires data structres and algorithm for its core concept and to judge a candidates problem solving capabilites ,Im currently having 3* at hackerrank ."}
+                description = {"As per current development trends all the companies requires data structres and algorithm for its core concept and to judge a candidates problem solving capabilites ,Im currently having 4* at hackerrank ."}
                 image2={"/protofolio/dsa.gif"}
                 show={bool.show}
 

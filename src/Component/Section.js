@@ -7,6 +7,8 @@ function Section(props) {
 
     console.log("boolean show in section = " + props.show)
     console.log("image="+ props.image)
+
+    window.scrollTo(0,0);
     
 
 
@@ -41,12 +43,17 @@ const Container=styled.div`
 
 background-image: url("cpp.gif");
 margin:auto%;
-
 height : 120vh;
 background : ${prop=>prop.show1 ? 'black' : 'white'};
 color : ${prop=>prop.show1 ? 'white' : 'black'};
 font-family: 'Montserrat', sans-serif;
+@media only screen and (max-width: 430px){
 
+  padding-top :20%;
+  width:228%;
+  height:205vh;
+
+}
 `
 
 const Main=styled.div`
@@ -76,11 +83,24 @@ const Image=styled.div`
         width:60%;
         margin-left:15%;
 
+        @media only screen and (max-width: 430px){
+
+            width:100%;
+
+        }
+
     }
 
 
 `
 const Topic=styled.div`
     width:50%;
+
+    @media only screen and (max-width: 430px){
+
+        font-size : x-large;
+        width:100%;
+        margin-left:20%;
+      }
 
 `

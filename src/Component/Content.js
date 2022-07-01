@@ -18,9 +18,9 @@ function Content(bool , props){
             <Profilecard show1={bool.show}>
 
                         <Card >
-
+                                <Fade top>
                                 <img src="/protofolio/1622913462556.jpg"alt="not found" onMouseOut={()=>setImg(false)} onMouseOver={()=>setImg(true)} />
-
+                                </Fade>
                                
                                  
                                   <Info show={img} show1={bool.show}>
@@ -37,8 +37,39 @@ function Content(bool , props){
                                     </Fade>
                                 </Info>
                                
+
                                
                         </Card>
+
+                        <Info2 show={img} show1={bool.show}>
+                                  <Fade right>
+                                    <h3>Name : kushagra mishra</h3>
+                                    </Fade>
+                                    <Fade left>
+                                    <h3>From : Lucknow , uttar pardesh</h3>
+                                    </Fade>
+                                    <Fade right>
+                                    <h3>Schooling : Kendriya vidyalaya aliganj lucknow</h3>
+                                    </Fade>
+                                    <Fade left>
+                                    <h3>Graduation : Bachelors of computer applications</h3>
+                                    </Fade>
+                                    <Fade right>
+                                    <h3>College : Graphic era "(deemed to be university)"</h3>
+                                    </Fade>
+                                    <Fade left>
+                                    <h3>College location : Dehradun , Uttrakhand</h3>
+                                    </Fade>
+                                    <Fade top>
+                                    <h3>Post graduation : Masters of computer application</h3>
+                                    </Fade>
+                                    <Fade bottom>
+                                    <h3>College : vishwakarma institute of technology</h3>
+                                    </Fade>
+                                    <Fade top>
+                                    <h3>College location : Pune , Maharashtra</h3>
+                                    </Fade>
+                                </Info2>
 
 
             </Profilecard>
@@ -47,20 +78,6 @@ function Content(bool , props){
 
 
             </Font>
-            <Main>      
-            <Buttons>
-              <Fade left>
-            <Link to="/protofolio/Skills"><button className="button-85" role="button">Skills</button></Link>
-            </Fade>
-            <Fade top>
-            <Link to="/protofolio/Skills"><button className="button-85" role="button">Projects</button></Link>
-            </Fade>
-            <Fade right>
-            <Link to="/protofolio/Skills"><button className="button-85" role="button">Cerification</button></Link>
-            </Fade>
-           </Buttons>
-            </Main>
-
     </Container>
   )
 }
@@ -75,13 +92,23 @@ display : flex;
 `
 
 const Container=styled.div`
-
 background:${prop=>prop.show1 ? 'black' : 'white'};
 color:${prop=>prop.show1 ? 'white' : 'black'};
+height:100vh;
+padding-bottom:5%;
 
 .scroll{
        
         scroll-snap-align : start;
+
+}
+
+@media only screen and (max-width: 430px){
+
+  padding-top :20%;
+  width:228%;
+  height:205vh;
+  padding-bottom:5%;
 
 }
 
@@ -104,6 +131,17 @@ img:hover {
     opacity : 0.5;
 }
 
+@media only screen and (max-width : 430px){
+
+
+  img{
+    margin-left:15%;
+    width:70%;
+  
+  }
+
+}
+
 
 `
 
@@ -118,18 +156,11 @@ margin-top:5%;
 margin-left:1%;
 justify-content : space-between;
 
-`;
+@media screen and ( max-width: 430px){
+  
+display : none;
 
-const Main = styled.div`
-
-margin : 2%;
-
-margin-left:10%;
-display : flex;
-felx-direction : row;
-scroll-snap-align:start;
-
-
+}
 
 `
 
@@ -141,86 +172,24 @@ scroll-snap-align:start;
 
 `
 
-const Buttons = styled.div`
-
-display : flex;
-felx-direction : row;
-margin-left:%;
-width : 30%;
-height : 6%;
 
 
-.button-85 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight:550;
-        margin-left:400%;
-        padding: 0.6em 2em;
-        border: none;
-        outline: none;
-        color: rgb(255, 255, 255);
-        background: #111;
-        cursor: pointer;
-        position: relative;
-        z-index: 0;
-        border-radius: 10px;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-      }
-      
-      .button-85:before {
-        content: "";
-        background: linear-gradient(
-          45deg,
-          #ff0000,
-          #ff7300,
-          #fffb00,
-          #48ff00,
-          #00ffd5,
-          #002bff,
-          #7a00ff,
-          #ff00c8,
-          #ff0000
-        );
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        background-size: 400%;
-        z-index: -1;
-        filter: blur(5px);
-        -webkit-filter: blur(5px);
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        animation: glowing-button-85 20s linear infinite;
-        transition: opacity 0.3s ease-in-out;
-        border-radius: 10px;
-      }
-      
-      @keyframes glowing-button-85 {
-        0% {
-          background-position: 0 0;
-        }
-        50% {
-          background-position: 400% 0;
-        }
-        100% {
-          background-position: 0 0;
-        }
-      }
-      
-      .button-85:after {
-        z-index: -1;
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #222;
-        left: 0;
-        top: 0;
-        border-radius: 10px;
-      }
-      
+const Info2 = styled.div`
 
+display:none;
+@media only screen and (max-width : 430px){
 
+  display : ${prop=>prop.show ? 'initial' : 'none'};
+  width :  ${prop=>prop.show ? '60%' : '0%'};
+
+  font-size : x-large;
+  h3{
+    width:75%;
+    margin-top:2.5%;
+    margin-left:15%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+}
 
 `

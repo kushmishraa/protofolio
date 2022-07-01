@@ -6,6 +6,7 @@ import Skills from './Component/Skills';
 import styled from 'styled-components';
 import { useState } from 'react';
 import Switch from '@mui/material/Switch';
+import Metatags from 'react-meta-tags'
 
 function App() {
 
@@ -23,6 +24,11 @@ function App() {
   return (
     <>
 <Main show={checked}>
+<Metatags>
+<meta name='viewport' content="width=device-width,initial scale = 1.0" />
+</Metatags>
+
+
     
 <Header show={checked}/>
     <Nightmode show={checked}>
@@ -34,10 +40,15 @@ function App() {
           />
           </Nightmode>
 
+        <Content show={checked} />
+        <Skills show={checked} />
+
+
+{/* 
     <Routes >
     <Route path='/protofolio/' exact element={<Content show={checked} />} />
     <Route path='/protofolio/Skills' exact element={<Skills show={checked} />} />
-    </Routes>
+    </Routes> */}
   </Main>
   </>
   );
@@ -49,16 +60,6 @@ const Main=styled.div`
 
 background : white;
 
-::-webkit-scrollbar {
-
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb{
-
-  background:black;
-
-}
 
 `
 
@@ -73,5 +74,13 @@ padding-left:3%;
 margin-top:3%;
 color:${prop=>prop.show? 'white' : 'black'};
 background-color : ${prop=>prop.show ? 'black' : 'white'};
+
+@media only screen and (max-width : 430px){
+
+
+  padding-top:22%;
+  width:225%;
+
+}
 `
 
